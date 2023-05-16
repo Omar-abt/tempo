@@ -1,0 +1,109 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #EEEEEE;
+}
+
+nav {
+    background: #818181;
+    position: fixed;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+label h1{
+    font-size: 40px;
+    font-family: Tahoma;;
+    color: #DB1F36;
+    display: inline-block;
+}
+
+label img {
+    position: relative;
+    left: 10px;
+    top: 25px;
+    width: 70px;
+}
+
+nav ul {
+    white-space: nowrap;
+    margin-right: 25px;
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 5px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    padding-right: 5px;
+}
+
+.images{
+    text-align: center;
+    margin: 150px 0px;
+    white-space: nowrap;
+}
+
+.images li{
+    display: inline-block;
+    list-style-type: none;
+    width: 25%;
+    margin: 20px 7%;
+    position: relative;
+}
+
+.images li img{
+    width: 470px;
+    height: 285px;
+}
+
+.pickup {
+    display: flex;
+    left: 300px;
+    bottom: 390px;
+}
+
+.pickup h2{
+    font-family: Tahoma;
+    font-size: 25px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.pickup form{
+
+}
+
+.pickup .location{
+    width: 470px;
+    height: 30px;
+}
+
+.dropoff{
+    position: absolute;
+    right: 430px;
+    bottom: 390px;
+}
+
+ */
+
+
+
