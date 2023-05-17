@@ -8,12 +8,14 @@
     </head>
     <body>
        
-        <nav class="navbar navbar-light bg-secondary py-3">
+        <nav class="navbar">
             <a class="navbar-brand" href="#">
-                Tempo
-                <img src="/img/logo_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <div class="logo">
+                    <p>Tempo</p>
+                    <img src="/img/logo_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                </div>
             </a>
-            <ul class="navbar-nav">
+            <ul  class="options">
                 <li class="nav-item">
                     <a href="/about.html" class="nav-link">About</a>
                 </li>
@@ -21,67 +23,77 @@
                     <a href="/contact_us.html" class="nav-link">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/profile.html" class="nav-link">Profile</a>
+                    <a href="/profile.html" class="nav-link">
+                        <img src="/img/person.png" alt="">
+                    </a>
                 </li>
             </ul>
         </nav>
 
 
-
-        <!-- <div class="container my-5">
-            <nav>
-                <label class="logo">
-                    <h1>Tempo</h1>
-                    <img src="/img/logo_icon.png" alt=""></li>    
-                </label>
-
-                <ul>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact_us.html">Contact us</a></li>
-                    <li><a href="/profile.html">Profile</a></li>
-                </ul>
-            </nav>
-        </div> -->
-
-
-        <main>
-            <ul class="images">
-                <li><img src="/img/pic1.jpg" alt="car image 1"></li>
-                <li><img src="/img/pic2.jpeg" alt="car image 2"></li>
-            </ul>
-
-            <div class="pickup">
-                <h2>Pick-up</h2>
-                <form>
-                    <input type="text" id="pickup_loc" class="location">
-                    <br>
-                    <input type="text" id="pickup_date">
-                    <input type="text" id="pickup_time">
-                </form>
+        <div class="container images">
+            <div class="row">
+                <div class="col">
+                    <img src="/img/pic1.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="/img/pic2.jpeg" alt="">
+                </div>
             </div>
+        </div>
 
-            <div class="dropoff">
-                <h2>Drop-off</h2>
-                <form>
-                    <input type="text" id="dropoff_loc" class="location">
-                    <br>
-                    <input type="text" id="dropoff_date">
-                    <input type="text" id="dropoff_time">
-                </form>
+
+        <div class="container search">
+            <div class="row">
+                <div class="col">
+                    <div class="pickup">
+                        <h2>Pick-up</h2>
+                        <form>
+                            <input type="text" id="pickup_loc" class="location" placeholder="Pick-up location...">
+                            <br>
+                            <input type="text" id="pickup_date" class="dt" placeholder="Pick-up date">
+                            <input type="text" id="pickup_time" class="time" placeholder="Pick-up time">
+                        </form>
+
+                        <button type="button" class="btn btn-default">Search</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropoff">
+                        <h2>Drop-off</h2>
+                        <form>
+                            <input type="text" id="dropoff_loc" class="location" placeholder="Drop-off location...">
+                            <br>
+                            <input type="text" id="dropoff_date" class="dt" placeholder="Drop-off date">
+                            <input type="text" id="dropoff_time" class="time" placeholder="Drop-off time">
+                        </form>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <button type="button">Search</button>
-        </main>
 
-        <section>
-            <h2>Popular Rentals</h2>
-            <ul class="popular_rentals">
-                <li><img src="" alt="popular_rental1"></li>
-                <li><img src="" alt="popular_rental2"></li>
-                <li><img src="" alt="popular_rental3"></li>
-                <li><img src="" alt="popular_rental4"></li>
-            </ul>
-        </section>
+        <div class="container pop_rentals">
+            <div class="row">
+                <h2>Popular Rentals</h2>
+                <div class="col">
+                    <img src="/img/pic6.jpg" alt="">
+                    <p>Mclaren 720s</p>
+                </div>
+                <div class="col">
+                    <img src="/img/pic7.jpg" alt="">
+                    <p>Lamborghini Hurucan Evo</p>
+                </div>
+                <div class="col">
+                    <img src="/img/pic8.jpg" alt="">
+                    <p>Bently Continental GT</p>
+                </div>
+                <div class="col">
+                    <img src="/img/pic9.jpg" alt="">
+                    <p>BMW M4</p>
+                </div>
+            </div>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>

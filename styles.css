@@ -1,109 +1,145 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
 body{
-background-color: #EEEEEE;
+    background-color: #EEEEEE !important;
 }
 
-nav {
-    background: #818181;
-    position: fixed;
-    padding-left: 10px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
+/* Navbar */
+.navbar{
+    height: 75px;
+    background-color: #CEA452;
 }
 
-label h1{
+.navbar .navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .logo{
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.navbar .logo p{
+    display: inline-block;
     font-size: 40px;
-    font-family: Tahoma;;
+    font-weight: 550;
     color: #DB1F36;
-    display: inline-block;
-}
-
-label img {
-    position: relative;
-    left: 10px;
-    top: 25px;
-    width: 70px;
-}
-
-nav ul {
-    white-space: nowrap;
-    margin-right: 25px;
-    float: right;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 120px;
-    margin: 0 5px;
-}
-
-nav li a{
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-    text-transform: uppercase;
-    font-family: Tahoma;
+    margin: 0;
     padding-right: 5px;
 }
 
-.images{
+.navbar .logo img{
+    width: 65px;
+    height: 65px;
+}
+
+.options{
+    margin: 0;
+    padding-bottom: 32px;
+    padding-right: 20px;
+}
+
+.options li{
+    display: inline;
+    float: left;
+}
+
+.options a{
+    font-size: 23px;
+    font-weight: 500;
+    color: black;
+}
+
+.options a img{
+    width: 28px;
+    height: 35px;
+}
+
+/* Main images */
+.container.images{
     text-align: center;
-    margin: 150px 0px;
-    white-space: nowrap;
+    padding-top: 40px;
 }
 
-.images li{
-    display: inline-block;
-    list-style-type: none;
-    width: 25%;
-    margin: 20px 7%;
-    position: relative;
+.container img{
+    max-width: 520px;
+    max-height: 340px;
+    width: 100%;
+    height: auto;
 }
 
-.images li img{
-    width: 470px;
-    height: 285px;
+/* Input field */
+.container.search{
+    padding-top: 10px;
 }
 
-.pickup {
-    display: flex;
-    left: 300px;
-    bottom: 390px;
+.container.search input{
+    height: 38px;
+    padding: 8px 8px;
 }
 
-.pickup h2{
-    font-family: Tahoma;
-    font-size: 25px;
-    font-weight: normal;
-    text-decoration: underline;
-    margin-top: 10px;
-}
-
-.pickup form{
-
-}
-
-.pickup .location{
-    width: 470px;
-    height: 30px;
+.pickup{
+    text-align: left;
+    padding-left: 55px;
 }
 
 .dropoff{
-    position: absolute;
-    right: 430px;
-    bottom: 390px;
+    text-align: left;
+    padding-left: 55px;
 }
 
- */
+.container.search .location{
+    width: 520px;
+    margin-bottom: 12px;
+}
 
+.container.search .dt{
+    margin-right: 87px
+}
 
+.container.search input{
+    width: 215px;
+}
 
+.container.search button{
+    margin-top: 12px;
+    line-height: 0;
+    background-color: #D94759;
+    color: white;
+    font-size: 24px;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+/* Popular Rentals */
+.container.pop_rentals{
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.container.pop_rentals h2{
+    padding-left: 25px;
+}
+
+.container.pop_rentals img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 7px;
+    max-width: 260px;
+    max-height: 165px;
+    width: 100%;
+    height: auto;
+}
+
+.container.pop_rentals .row{
+    width: 1250px;
+    margin: 0px 0px;
+}
+
+.container.pop_rentals p{
+    padding-top: 7px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
