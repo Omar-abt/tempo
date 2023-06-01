@@ -2,6 +2,10 @@ body{
     background-color: #EEEEEE !important;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /* Navbar */
 .navbar{
     height: 75px;
@@ -35,12 +39,13 @@ body{
 .options{
     margin: 0;
     padding-bottom: 32px;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .options li{
     display: inline;
     float: left;
+    padding: 0px 5px;
 }
 
 .options a{
@@ -54,6 +59,7 @@ body{
     height: 35px;
 }
 
+/* index.html */
 /* Main images */
 .container.images{
     text-align: center;
@@ -142,4 +148,92 @@ body{
     text-align: center;
     font-size: 18px;
     font-weight: 500;
+}
+
+
+
+/* about.html */
+.about.row{
+    margin-top: 30px;
+}
+
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Col1 content */
+.col1_content{
+    padding-left: 60px;
+}
+
+/* How Tempo works */
+.how_tempo_works{
+    max-width: 60%;
+}
+
+.how_tempo_works p{
+    margin-left: 23px;
+    margin-bottom: 0;
+}
+
+.how_tempo_works h1{
+    margin-bottom: 20px;
+}
+
+.how_tempo_works h4{
+    margin-bottom: 3px;
+}
+
+.how_tempo_works li{
+    padding-bottom: 5px;
+}
+
+/* Rental Agents */
+.rental_agents .col{
+    /* background-color: aqua; */
+    padding: 0;
+}
+
+.rental_agents .col-2{
+    padding: 0;
+}
+
+.rental_agents .row{
+    padding-bottom: 25px;
+    /* margin-left: 10px; */
+}
+
+.rental_agents h1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.rental_agents img{
+    max-width: 110px;
+    max-height: 125px;
+    width: 100%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rental_agents .wrapper{
+    max-width: 70%;
+}
+
+/* Col2 content */
+.col2_content{
+
+}
+
+.col2_content img{
+    max-width: 480px;
+    max-height: 320px;
+    width: 100%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 65px;
 }
