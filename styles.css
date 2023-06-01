@@ -17,7 +17,7 @@ ul{
     padding: 0;
 }
 
-.navbar .logo{
+.navbar .logo_padding{
     padding-left: 20px;
     padding-bottom: 40px;
 }
@@ -236,4 +236,38 @@ ul{
     height: auto;
     margin-left: 60px;
     margin-bottom: 65px;
+}
+
+
+/* contact.html */
+.contact .row{
+    margin-top: 30px;
+}
+
+.contact .our_office p{
+    max-width: 70%;
+    margin-bottom: 40px;
+}
+
+iframe{
+    height: 400px;
+    width: 70%;
+}
+
+.contact .col2_content{
+    margin-left: 20px;
+}
+
+.contact .col2_content .row{
+    margin-top: 0;
+}
+
+.contact .col2_content h1{
+    margin-bottom: 20px;
+}
+
+.contact .col2_content p{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
 }
