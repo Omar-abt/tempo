@@ -10,6 +10,9 @@ ul{
 .navbar{
     height: 75px;
     background-color: #CEA452;
+
+    position: sticky;
+    top: 0;
 }
 
 .navbar .navbar-brand{
@@ -81,6 +84,7 @@ ul{
 .container.search input{
     height: 38px;
     padding: 8px 8px;
+    width: 215px;
 }
 
 .pickup{
@@ -100,10 +104,6 @@ ul{
 
 .container.search .dt{
     margin-right: 87px
-}
-
-.container.search input{
-    width: 215px;
 }
 
 .container.search button{
@@ -270,4 +270,33 @@ iframe{
     font-size: 25px;
     font-weight: 400;
     margin-bottom: 0;
+}
+
+
+/* Results Page */
+.details_bar{
+    height: 85px;
+    background-color: #d3d2d2;
+    /* border-bottom: 10px solid; */
+}
+
+.details_bar form{
+    justify-content: center;
+    display: flex;
+}
+.details_bar .location{
+    padding-right: 200px;
+}
+
+.details_bar input{
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.details_bar input{
+    max-height: 40px;
+    height: auto;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 2px solid;
 }
