@@ -10,14 +10,6 @@ ul{
 .navbar{
     height: 75px;
     background-color: #CEA452;
-
-    position: sticky;
-    top: 0;
-}
-
-.navbar .navbar-brand{
-    margin: 0;
-    padding: 0;
 }
 
 .navbar .logo_padding{
@@ -173,7 +165,7 @@ ul{
 }
 
 .how_tempo_works p{
-    margin-left: 23px;
+    margin-left: 32px;
     margin-bottom: 0;
 }
 
@@ -277,26 +269,98 @@ iframe{
 .details_bar{
     height: 85px;
     background-color: #d3d2d2;
+    margin-bottom: 50px;
     /* border-bottom: 10px solid; */
 }
 
-.details_bar form{
-    justify-content: center;
-    display: flex;
+.details_bar .col-4{
+    padding-left: 80px;
 }
-.details_bar .location{
-    padding-right: 200px;
+
+.details_bar .col-8{
+    padding-right: 100px;
 }
 
 .details_bar input{
-    margin-top: 25px;
-    margin-right: 20px;
+    margin: 25px 10px 0 10px;
 }
 
 .details_bar input{
     max-height: 40px;
-    height: auto;
+    max-width: 200px; 
+    height: 100%;
+    width: auto;
     padding: 8px 8px;
     border-radius: 5px;
     border: 2px solid;
+}
+
+.content .row{
+    margin: 25px 0;
+    margin-left: 3%;
+    margin-right: 30%;
+    background-color: #d3d2d2;
+    max-height: 190px;
+    border-radius: 7px;
+}
+
+.content .col-2, .content .col-3, .content .col-7{
+    padding: 0;
+    /* margin-left: 15px; */
+}
+
+.content .col-3{
+    display: flex;
+    justify-content: center;
+}
+
+.content .picture img{
+    max-width: 210px;
+    max-height: 120px;
+    width: 100%;
+    height: auto;
+
+    margin: 20px 0 20px 0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content .col-2 .row{
+    margin: 0;
+}
+
+.content .col-2 h4{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+#reserve_button{
+    margin: 0;
+    line-height: 10px;
+    text-align: center;
+    background-color: #D94759;
+    color: white;
+    font-size: 21px;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    padding: 0;
+}
+
+.content p{
+    margin-bottom: 3px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.content .description h4{
+    margin-bottom: 4px;
+}
+
+.uitk-icon-small{
+    width: 25px;
+    height: 25px;
+    stroke-opacity: 0;
+    margin-right: 5px;
 }
