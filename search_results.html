@@ -8,7 +8,7 @@
     </head>
     <body>
         
-        <nav class="navbar">
+        <nav class="navbar sticky-top">
             <div class="logo_padding">
                 <div class="logo">
                     <p>Tempo</p>
@@ -35,23 +35,47 @@
             <div class="container-fluid">
                 <form>
                     <div class="row">
-                        <div class="col-4">                            
-                            <input type="text" id="pickup_loc" placeholder="Pick-up location..." readonly>
+                        <div class="col-4">    
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="output_pickup_loc" placeholder="Pick-up location..." readonly>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                    <input type="text" class="form-control" id="output_dropoff_loc" placeholder="Drop-off location..." readonly>
+                                </div>
+                            </form>
+
+                            <!-- <input type="text" id="pickup_loc" placeholder="Pick-up location..." readonly>
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                             </svg>
-                            <input type="text" id="dropoff_loc" placeholder="Drop-off location..." readonly>
+                            <input type="text" id="dropoff_loc" placeholder="Drop-off location..." readonly> -->
                         </div>
                         <div class="col-8">
                             <div class="float-end">
-                                <span class="pickup">
+                                <form>
+                                    <div class="form-group">
+                                        <span class="pickup">
+                                            <input type="text" class="form-control" id="output_pickup_date" placeholder="Pick-up date" readonly>
+                                            <input type="text" class="form-control" id="output_pickup_time" placeholder="Pick-up time" readonly>
+                                        </span>
+
+                                        <span class="dropoff">
+                                            <input type="text" class="form-control" id="output_dropoff_date" placeholder="Drop-off date" readonly>
+                                            <input type="text" class="form-control" id="output_dropoff_time" placeholder="Drop-off time" readonly>
+                                        </span> 
+                                    </div>
+                                </form>
+
+                                <!-- <span class="pickup">
                                     <input type="text" id="pickup_date" placeholder="Pick-up date" readonly>
                                     <input type="text" id="pickup_time" placeholder="Pick-up time" readonly>
                                 </span>
                                 <span class="dropoff">
                                     <input type="text" id="dropoff_date" placeholder="Drop-off date" readonly>
                                     <input type="text" id="dropoff_time" placeholder="Drop-off time" readonly>
-                                </span>
+                                </span> -->
                             </div>
                         </div>
                     </div>
@@ -86,10 +110,12 @@
                         <div class="col-2 price">
                             <div class="row">
                                 <br>
-                                <h4>$1199</h4>
+                                <h4>$1199/day</h4>
                             </div>
                             <div class="row">
+                                <a href="/personal_info.html?car=1">
                                 <button type="button" class="btn" id="reserve_button">Reserve</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -117,10 +143,12 @@
                         <div class="col-2 price">
                             <div class="row">
                                 <br>
-                                <h4>$799</h4>
+                                <h4>$799/day</h4>
                             </div>
                             <div class="row">
+                                <a href="/personal_info.html?car=2">
                                 <button type="button" class="btn" id="reserve_button">Reserve</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -148,10 +176,12 @@
                         <div class="col-2 price">
                             <div class="row">
                                 <br>
-                                <h4>$699</h4>
+                                <h4>$699/day</h4>
                             </div>
                             <div class="row">
+                                <a href="/personal_info.html?car=3">
                                 <button type="button" class="btn" id="reserve_button">Reserve</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -179,10 +209,12 @@
                         <div class="col-2 price">
                             <div class="row">
                                 <br>
-                                <h4>$999</h4>
+                                <h4>$999/day</h4>
                             </div>
                             <div class="row">
+                                <a href="/personal_info.html?car=4">
                                 <button type="button" class="btn" id="reserve_button">Reserve</button>
+                                </a>
                             </div>
                         </div>
                     </div>

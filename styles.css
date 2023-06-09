@@ -62,10 +62,25 @@ ul{
 }
 
 .container img{
+
     max-width: 520px;
     max-height: 340px;
     width: 100%;
     height: auto;
+}
+
+
+.carousel-inner img{
+    /* width: 91%; */
+    height: 400px;
+    object-fit: cover;    
+}
+
+
+/* For carousel */
+.front_img{
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* Input field */
@@ -73,10 +88,19 @@ ul{
     padding-top: 10px;
 }
 
-.container.search input{
-    height: 38px;
-    padding: 8px 8px;
-    width: 215px;
+.container.search .location{
+    width: 100%;
+}
+
+.container.search .date,
+.container.search .time{
+    display: inline-block;
+    width: 35%;
+}
+
+.container.search .time{
+    float: right;
+    margin-right: 10.5%;
 }
 
 .pickup{
@@ -270,7 +294,6 @@ iframe{
     height: 85px;
     background-color: #d3d2d2;
     margin-bottom: 50px;
-    /* border-bottom: 10px solid; */
 }
 
 .details_bar .col-4{
@@ -288,11 +311,9 @@ iframe{
 .details_bar input{
     max-height: 40px;
     max-width: 200px; 
-    height: 100%;
     width: auto;
-    padding: 8px 8px;
-    border-radius: 5px;
     border: 2px solid;
+    display: inline-block;
 }
 
 .search_results .content .row{
@@ -309,12 +330,12 @@ iframe{
     /* margin-left: 15px; */
 }
 
-.content .col-3{
+.search_results .content .col-3{
     display: flex;
     justify-content: center;
 }
 
-.content .picture img{
+.search_results .picture img{
     max-width: 210px;
     max-height: 120px;
     width: 100%;
@@ -332,6 +353,10 @@ iframe{
     margin-top: 25px;
     margin-bottom: 10px;
     padding-left: 0;
+}
+
+.search_results .content a{
+    padding: 0;
 }
 
 #reserve_button{
@@ -373,6 +398,26 @@ iframe{
 
 .personal_info .information h2{
     margin-bottom: 30px;
+}
+
+
+.personal_info #target{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.personal_info #target img{
+    width: 85%;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.personal_info #target .description,
+.personal_info #target .price{
+    padding: 0;
+}
+
+.personal_info #target .price h4{
+    margin-top: 0;
 }
 
 .personal_info .information .form-group{

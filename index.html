@@ -8,7 +8,7 @@
     </head>
     <body>
        
-        <nav class="navbar">
+        <nav class="navbar sticky-top">
             <div class="logo_padding">
                 <div class="logo">
                     <p>Tempo</p>
@@ -35,13 +35,65 @@
         <div class="container images">
             <div class="row">
                 <div class="col">
-                    <img src="/img/pic1.jpg" alt="">
+                    <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/img/pic1.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/pic18.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/pic3.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/pic2.jpg" alt="">
+                          </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="/img/pic2.jpg" alt="">
+                    <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/img/pic5.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/pic16.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/pic17.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/pic19.jpg" alt="">
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- <div class="front_img">
+            <div class="container">
+                <div class="row">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/wide1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/wide2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/wide3.jpg" alt="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
 
 
         <div class="container search">
@@ -50,12 +102,14 @@
                     <div class="pickup">
                         <h2>Pick-up</h2>
                         <form>
-                            <input type="text" id="pickup_loc" class="location" placeholder="Pick-up location...">
-                            <br>
-                            <input type="text" id="pickup_date" class="dt" placeholder="Pick-up date">
-                            <input type="text" id="pickup_time" class="time" placeholder="Pick-up time">
+                            <div class="form-group">
+                                <input type="text" id="pickup_loc" class="form-control location" placeholder="Pick-up location...">
+                            </div>
+                            <div class="form-group date_time">
+                                <input type="date" id="pickup_date" class="form-control date" placeholder="Pick-up date">
+                                <input type="time" id="pickup_time" class="form-control time" placeholder="Pick-up time">
+                            </div>
                         </form>
-
                         <button type="button" class="btn" id="search_button">Search</button>
                     </div>
                 </div>
@@ -63,10 +117,13 @@
                     <div class="dropoff">
                         <h2>Drop-off</h2>
                         <form>
-                            <input type="text" id="dropoff_loc" class="location" placeholder="Drop-off location...">
-                            <br>
-                            <input type="text" id="dropoff_date" class="dt" placeholder="Drop-off date">
-                            <input type="text" id="dropoff_time" class="time" placeholder="Drop-off time">
+                            <div class="form-group">
+                                <input type="text" id="dropoff_loc" class="form-control location" placeholder="Drop-off location...">
+                            </div>
+                            <div class="form-group date_time">
+                                <input type="date" id="dropoff_date" class="form-control date" placeholder="Drop-off date">
+                                <input type="time" id="dropoff_time" class="form-control time" placeholder="Drop-off time">
+                            </div>
                         </form>
                     </div>
                 </div>
