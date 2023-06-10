@@ -20,7 +20,6 @@ html{
 .navbar{
     height: 75px;
     background-color: #ababab;
-    /* background-color: #CEA452; */
 }
 
 .navbar .logo_padding{
@@ -29,7 +28,6 @@ html{
 
 
 .navbar .nav-link{
-    /* color: black; */
     background-image: linear-gradient(
         to right,
         #D94759,
