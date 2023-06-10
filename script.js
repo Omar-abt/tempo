@@ -70,11 +70,11 @@ if (document.getElementById("output_dropoff_time")) {
 let carousel1 = document.getElementById('carousel1');
 let carousel2 = document.getElementById('carousel2');
 
-// function triggerNextSlide() {
-//     carousel1?.carousel1.next();
-//     carousel2?.carousel2.next();
-// }
-// setInterval(triggerNextSlide, 1000);
+function triggerNextSlide() {
+    carousel1?.carousel1.next();
+    carousel2?.carousel2.next();
+}
+setInterval(triggerNextSlide, 1000);
 
   
 
