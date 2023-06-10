@@ -95,7 +95,7 @@ if (document.getElementById('target')){
                     <h4>Mclaren 720s</h4>
                 </div>
                 <div class="col-2 price">
-                    <h4>$1199/day</h4>
+                    <h4>$1799/day</h4>
                 </div>
             </div>`
     }
@@ -109,7 +109,7 @@ if (document.getElementById('target')){
                     <h4>Mercedes AMG GTR</h4>
                 </div>
                 <div class="col-2 price">
-                    <h4>$799/day</h4>
+                    <h4>$1299/day</h4>
                 </div>
             </div>`
     }
@@ -123,7 +123,7 @@ if (document.getElementById('target')){
                 <h4>Audi R8</h4>
             </div>
             <div class="col-2 price">
-                <h4>$699/day</h4>
+                <h4>$999/day</h4>
             </div>
         </div>`
     }
@@ -137,7 +137,7 @@ if (document.getElementById('target')){
                 <h4>Porsche 911 GT3</h4>
             </div>
             <div class="col-2 price">
-                <h4>$999/day</h4>
+                <h4>$1399/day</h4>
             </div>
         </div>`
     }

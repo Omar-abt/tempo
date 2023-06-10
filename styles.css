@@ -29,11 +29,33 @@ html{
 
 
 .navbar .nav-link{
-    color: black;
+    /* color: black; */
+    background-image: linear-gradient(
+        to right,
+        #D94759,
+        #D94759 50%,
+        #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link:before{
+    content: '';
+    background: #D94759;
+    display: block;
+    position: relative;
+    bottom: -35px;
+    left: 0;
+    width: 0;
+    height: 3px;
 }
 
 .navbar .nav-link:hover{
-    color: #D94759;
+    background-position: 0;
 }
 
 .navbar .logo img{
@@ -455,7 +477,6 @@ iframe{
 
 .content .col-2, .content .col-3, .content .col-7{
     padding: 0;
-    /* margin-left: 15px; */
 }
 
 .search_results .content .col-3{
