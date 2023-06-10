@@ -11,56 +11,56 @@ searchButton?.addEventListener("click", function() {
 function saveBookingInfo() {
     const pickUpLoc = document.getElementById("pickup_loc");
     const pickUpLocVal = pickUpLoc.value;
-    localStorage.setItem("pickup-loc", pickUpLocVal);  
+    sessionStorage.setItem("pickup-loc", pickUpLocVal);  
 
     const pickUpDate = document.getElementById("pickup_date");
     const pickUpDateVal = pickUpDate.value;
-    localStorage.setItem("pickup-date", pickUpDateVal); 
+    sessionStorage.setItem("pickup-date", pickUpDateVal); 
 
     const pickUpTime = document.getElementById("pickup_time");
     const pickUpTimeVal = pickUpTime.value;
-    localStorage.setItem("pickup-time", pickUpTimeVal); 
+    sessionStorage.setItem("pickup-time", pickUpTimeVal); 
 
     const dropOffLoc = document.getElementById("dropoff_loc");
     const dropOffLocVal = dropOffLoc.value;
-    localStorage.setItem("dropoff-loc", dropOffLocVal); 
+    sessionStorage.setItem("dropoff-loc", dropOffLocVal); 
 
     const dropOffDate = document.getElementById("dropoff_date");
     const dropOffDateVal = dropOffDate.value;
-    localStorage.setItem("dropoff-date", dropOffDateVal);
+    sessionStorage.setItem("dropoff-date", dropOffDateVal);
 
     const dropOffTime = document.getElementById("dropoff_time");
     const dropOffTimeVal = dropOffTime.value;
-    localStorage.setItem("dropoff-time", dropOffTimeVal);
+    sessionStorage.setItem("dropoff-time", dropOffTimeVal);
 }
 
 if (document.getElementById("output_pickup_loc")) {
-    const outputPickupLoc = localStorage.getItem("pickup-loc");
+    const outputPickupLoc = sessionStorage.getItem("pickup-loc");
     document.getElementById("output_pickup_loc").value = outputPickupLoc;
 }
 
 if (document.getElementById("output_pickup_date")) {
-    const outputPickUpDate = localStorage.getItem("pickup-date");
+    const outputPickUpDate = sessionStorage.getItem("pickup-date");
     document.getElementById("output_pickup_date").value = outputPickUpDate;
 }
 
 if (document.getElementById("output_pickup_time")) {
-    const outputPickUpTime = localStorage.getItem("pickup-time");
+    const outputPickUpTime = sessionStorage.getItem("pickup-time");
     document.getElementById("output_pickup_time").value = outputPickUpTime;
 }
 
 if (document.getElementById("output_dropoff_loc")) {
-    const outputDropOffLoc = localStorage.getItem("dropoff-loc");
+    const outputDropOffLoc = sessionStorage.getItem("dropoff-loc");
     document.getElementById("output_dropoff_loc").value = outputDropOffLoc;
 }
 
 if (document.getElementById("output_dropoff_date")) {
-    const outputDropOffDate = localStorage.getItem("dropoff-date");
+    const outputDropOffDate = sessionStorage.getItem("dropoff-date");
     document.getElementById("output_dropoff_date").value = outputDropOffDate;
 }
 
 if (document.getElementById("output_dropoff_time")) {
-    const outputDropOffTime = localStorage.getItem("dropoff-time");
+    const outputDropOffTime = sessionStorage.getItem("dropoff-time");
     document.getElementById("output_dropoff_time").value = outputDropOffTime;
 }
 
@@ -84,7 +84,6 @@ if (document.getElementById('target')){
     const urlParams = new URLSearchParams(queryString);
     let car = urlParams.get('car');
     let target = document.getElementById('target');
-    console.log(car);
 
     if (car == 1){
             target.innerHTML = `
@@ -149,5 +148,37 @@ const bookingConfirmationButton = document.getElementById("confirm_button");
     
 // Button click event handlers
 bookingConfirmationButton?.addEventListener("click", function() {
+    saveRentalAgent();
     window.location.href = "confirmation.html"; 
 });
+
+
+
+//Confirmation page
+function saveRentalAgent() {
+    const rentalAgent = document.getElementById("agent_select");
+    const rentalAgentVal = rentalAgent.value;
+    sessionStorage.setItem("rental-agent", rentalAgentVal);
+}
+
+if (document.getElementById("output_rental_agent")) {
+    const outputRentalAgent = sessionStorage.getItem("rental-agent");
+    document.getElementById("output_rental_agent").innerText += " " + outputRentalAgent;
+}
+
+if (document.getElementById("output_booking_number")) {
+    let bookingNum = Math.floor((Math.random() * 10000) + 1000);
+    console.log(bookingNum);
+
+    document.getElementById("output_booking_number").innerText += " " + bookingNum;
+}
+
+if (document.getElementById("confirmation_pickup_loc")) {
+    const outputPickupLoc = sessionStorage.getItem("pickup-loc");
+    document.getElementById("confirmation_pickup_loc").innerText += " " + outputPickupLoc;
+}
+
+if (document.getElementById("confirmation_dropoff_loc")) {
+    const outputDropOffLoc = sessionStorage.getItem("dropoff-loc");
+    document.getElementById("confirmation_dropoff_loc").innerText += " " + outputDropOffLoc;
+}

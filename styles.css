@@ -1,3 +1,7 @@
+*{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body{
     background-color: #EEEEEE !important;
 }
@@ -6,15 +10,21 @@ ul{
     list-style-type: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 /* Navbar */
 .navbar{
     height: 75px;
-    background-color: #CEA452;
+    background-color: #ababab;
+    /* background-color: #CEA452; */
 }
 
 .navbar .logo_padding{
     padding-left: 20px;
-    padding-bottom: 40px;
 }
 
 .navbar .logo p{
@@ -26,33 +36,36 @@ ul{
     padding-right: 5px;
 }
 
+.navbar .nav-link{
+    color: black;
+}
+
+.navbar .nav-link:hover{
+    color: #D94759;
+}
+
 .navbar .logo img{
-    width: 65px;
-    height: 65px;
+    width: 220px;
 }
 
 .options{
     margin: 0;
-    padding-bottom: 32px;
+    padding-top: 5px ;
     padding-right: 40px;
 }
 
 .options li{
     display: inline;
     float: left;
-    padding: 0px 5px;
+    padding: 5px 5px;
 }
 
 .options a{
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 500;
     color: black;
 }
 
-.options a img{
-    width: 28px;
-    height: 35px;
-}
 
 /* index.html */
 /* Main images */
@@ -134,11 +147,38 @@ ul{
     border: 1.5px solid black;
 }
 
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.btn:hover span {
+    padding-right: 20px;
+}
+  
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 /* Popular Rentals */
 .container.pop_rentals{
     padding-left: 40px;
     margin-top: 40px;
 }
+
 
 .container.pop_rentals h2{
     padding-left: 25px;
@@ -155,6 +195,7 @@ ul{
 }
 
 .container.pop_rentals .row{
+    
     width: 1250px;
     margin: 0px 0px;
 }
@@ -166,6 +207,91 @@ ul{
     font-weight: 500;
 }
 
+
+/* Services and prices section */
+.services_prices .container-fluid,
+.reviews .container-fluid{
+    width: 90%;
+    margin: 90px auto;
+}
+
+.services_prices .big_row{
+    margin-top: 60px;
+    margin-bottom: 110px;
+}
+
+.services_prices .internal_row{
+    margin-bottom: 15px;
+}
+
+.services_prices .col-7 img{
+    width: 98%;
+}
+
+.services_prices .class_num{
+    color: #D94759;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.services_prices .class_name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.services_prices .class_description{
+    text-align: justify;
+    width: 90%;
+}
+
+.services_prices .class_cars{
+    margin-top: 50px;
+    padding-left: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.services_prices .class_price{
+    margin-top: 40px;
+    color: #D94759;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Customer Reviews section */
+
+.reviews .reviews_title{
+    margin-bottom: 40px;
+}
+
+.reviews .card{
+    margin: 15px 0;
+}
+
+.reviews .card-title{
+    font-size: 23px;
+    margin-bottom: 2px;
+}
+
+.reviews .review_date {
+    display: inline-block;
+    color: grey;
+    opacity: 80%; 
+}
+
+.reviews .card-text {
+    width: 95%;
+    text-align: justify;
+}
+
+.reviews .card-body img{
+    width: 13%;
+    margin: 0 10px 5px 0;
+    display: inline-block;
+}
 
 
 /* about.html */
@@ -185,7 +311,7 @@ ul{
 
 /* How Tempo works */
 .how_tempo_works{
-    max-width: 60%;
+    max-width: 65%;
 }
 
 .how_tempo_works p{
@@ -261,13 +387,13 @@ ul{
 }
 
 .contact .our_office p{
-    max-width: 70%;
+    max-width: 80%;
     margin-bottom: 40px;
 }
 
 iframe{
-    height: 400px;
-    width: 70%;
+    height: 500px;
+    width: 80%;
 }
 
 .contact .col2_content{
@@ -288,11 +414,21 @@ iframe{
     margin-bottom: 0;
 }
 
+.contact svg{
+    width: 27px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.contact .indent{
+    margin-left: 42px;
+}
+
 
 /* Results Page */
 .details_bar{
     height: 85px;
-    background-color: #d3d2d2;
+    background-color: #d2d2d2;
     margin-bottom: 50px;
 }
 
@@ -366,8 +502,8 @@ iframe{
     background-color: #D94759;
     color: white;
     font-size: 21px;
-    width: 90px;
-    height: 30px;
+    width: 110px;
+    height: 35px;
     border-radius: 10px;
     border: 1.5px solid black;
     padding: 0;
@@ -437,10 +573,40 @@ iframe{
     background-color: #D94759;
     color: white;
     font-size: 24px;
-    width: 110px;
-    height: 34px;
+    width: 130px;
+    height: 38px;
     border-radius: 10px;
     border: 1.5px solid black;
     padding: 0;
+}
+
+/* Confirmation page */
+.confirmation .booking_details .details{
+    padding: 12% 5% 7% 5%;
+    text-align: center;
+}
+
+.confirmation .booking_details h2{
+    padding: 5px;
+}
+
+.confirmation .booking_details span{
+    font-size: 30px;
+    font-weight: 350;
+}
+
+.confirmation .booking_details .checkmark{
+    text-align: center;
+}
+
+.confirmation .booking_details .checkmark h1{
+    display: inline-block;
+}
+
+.confirmation .booking_details .checkmark img{
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 3%;
+    margin-left: 10px;
 }
 
